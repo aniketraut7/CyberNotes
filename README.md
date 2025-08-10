@@ -2,7 +2,7 @@
 
 A curated collection of cheatsheets, notes, and quick references for beginners and practitioners in cybersecurity.
 
-Created by **Lucifer** 💻 | Curated with guidance from **Oblivex**  
+Created by **Lucifer** 💻  
 
 ---
 
