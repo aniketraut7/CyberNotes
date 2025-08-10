@@ -112,6 +112,8 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 5. Observe reflected script execution
 6. Validate using manual and automated scans
 
+---
+
 ## 📌 Quick Commands
 
 - Save all project data:
@@ -120,5 +122,6 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 - Change User-Agent:
   Proxy → HTTP history → Right-click request → Change headers
 
+---
 
   ### Lucifer’s Tip 🕶️: Master Burp’s manual testing before depending on automation — it makes you a true hacker, not just a button clicker.
