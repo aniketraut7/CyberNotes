@@ -114,3 +114,6 @@ knockpy example.com
 - Schedule periodic scans — domains change over time.
 
 - For stealth: stick to passive methods in sensitive engagements.
+
+
+### Lucifer Insight 💻🕶️: The best recon artist isn’t the loudest scanner — it’s the one who knows where to look when others don’t.
