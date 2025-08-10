@@ -58,13 +58,13 @@ Actively probes the target infrastructure. May trigger IDS/IPS alerts.
   ```bash
   fierce --domain example.com
   ```
--**Knockpy**
+- **Knockpy**
 ```bash
 knockpy example.com
 ```
 
 ### **3. Hybrid / Combined Enumeration**
-- Combines multiple methods to ensure maximum coverage.
+-- Combines multiple methods to ensure maximum coverage.
  - subfinder -d example.com -silent > subs.txt
  - assetfinder --subs-only example.com >> subs.txt
  - amass enum -passive -d example.com >> subs.txt
