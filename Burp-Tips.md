@@ -34,24 +34,24 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 
 ## 🎯 Common Use Cases
 
-```bash
+
 1. Manual Testing Workflow
-   Proxy → Scope → Crawl → Scan → Analyze → Exploit
+   - Proxy → Scope → Crawl → Scan → Analyze → Exploit
    
 2. Authentication Testing
-   Capture login requests in Proxy
-   Test weak credentials with Intruder
+   - Capture login requests in Proxy
+   - Test weak credentials with Intruder
 
 3. Session Hijacking
-   Intercept session cookies
-   Replay in new requests via Repeater
+   - Intercept session cookies
+   - Replay in new requests via Repeater
 
 4. Parameter Tampering
-   Modify GET/POST parameters and resend
+  - Modify GET/POST parameters and resend
 
 5. Hidden Directory Discovery
-   Use Burp Intruder with a wordlist for directory brute-force
-```
+  - Use Burp Intruder with a wordlist for directory brute-force
+
 ---
 
 ## 🧠 Useful Extensions (BApp Store)Logger++ — Better request/response logging
@@ -60,4 +60,6 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 - Active Scan++ — More aggressive scanning
 - Retire.js — Detect vulnerable JavaScript libraries
 - JSON Beautifier — Pretty-print JSON responses
+
+---
 
