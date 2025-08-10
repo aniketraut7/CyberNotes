@@ -26,3 +26,15 @@ These methods don’t directly interact with the target’s infrastructure, maki
   ```bash
   subfinder -d example.com -silent
   ```
+- **crt.sh (Certificate Transparency Search)**
+  ```bash
+  Visit: https://crt.sh/?q=example.com
+  ```
+- **Assetfinder**
+  ```bash
+  assetfinder --subs-only example.com
+  ```
+- **SecurityTrails API**
+  ```bash
+  securitytrails --domain example.com
+  ```
