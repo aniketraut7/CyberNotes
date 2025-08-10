@@ -51,3 +51,4 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 
 5. **Hidden Directory Discovery
    Use Burp Intruder with a wordlist for directory brute-force
+```
