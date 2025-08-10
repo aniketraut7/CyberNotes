@@ -1,108 +1,153 @@
 # 🛡️ OWASP Top 10 – Web Application Security Risks (2021)
 
-The **OWASP Top 10** is the most widely recognized list of the most critical web application security risks, published by the [Open Web Application Security Project](https://owasp.org).  
-This guide summarizes each risk, its impact, and common mitigation strategies.
+The **OWASP Top 10** is a globally recognized list of the most critical security risks to web applications, compiled by the [Open Web Application Security Project](https://owasp.org/).  
+It serves as an **awareness document** for developers, security teams, and organizations.
 
 ---
 
-## 1️⃣ **Broken Access Control**
-- **Description:** Users can perform actions they shouldn’t (e.g., accessing another user's data).
-- **Example:** Changing `user_id=123` to `user_id=124` in a URL to view another account.
-- **Mitigation:**
-  - Enforce proper role-based access control (RBAC).
-  - Validate access on the server side.
-  - Use deny-by-default permissions.
+## **1. Broken Access Control**
+**Description:** Flaws in enforcing what authenticated users are allowed to do.  
+**Examples:**
+- Viewing or modifying another user's data by changing a URL parameter.
+- Bypassing role-based access restrictions.
+**Impact:** Data breaches, privilege escalation.
+**Mitigation:**
+- Enforce server-side access checks.
+- Use Role-Based Access Control (RBAC).
+- Deny access by default.
 
 ---
 
-## 2️⃣ **Cryptographic Failures** (formerly *Sensitive Data Exposure*)
-- **Description:** Sensitive data is exposed due to weak or no encryption.
-- **Example:** Storing passwords in plaintext.
-- **Mitigation:**
-  - Use strong encryption (AES-256, TLS 1.2+).
-  - Don’t store unnecessary sensitive data.
-  - Use secure password hashing (`bcrypt`, `Argon2`).
+## **2. Cryptographic Failures** (formerly Sensitive Data Exposure)
+**Description:** Failures related to data encryption, both at rest and in transit.  
+**Examples:**
+- Storing passwords in plaintext.
+- Using outdated encryption like MD5 or SHA1.
+**Impact:** Data theft, credential leaks.
+**Mitigation:**
+- Use strong encryption (AES-256, TLS 1.2+).
+- Use proper key management.
+- Hash passwords with `bcrypt`, `scrypt`, or `Argon2`.
 
 ---
 
-## 3️⃣ **Injection**
-- **Description:** Malicious input is interpreted as code or commands.
-- **Example:** SQL Injection via `id=1 OR 1=1`.
-- **Mitigation:**
-  - Use prepared statements and parameterized queries.
-  - Validate and sanitize input.
-  - Use ORM frameworks where possible.
+## **3. Injection**
+**Description:** Unsanitized input is interpreted as code.  
+**Examples:**
+- SQL Injection: `id=1 OR 1=1`
+- Command Injection: `; rm -rf /`
+**Impact:** Data manipulation, server compromise.
+**Mitigation:**
+- Use parameterized queries.
+- Sanitize and validate input.
+- Use ORM frameworks.
 
 ---
 
-## 4️⃣ **Insecure Design**
-- **Description:** Poor security controls are built into the application design.
-- **Example:** No rate-limiting on login attempts.
-- **Mitigation:**
-  - Use threat modeling during design.
-  - Apply secure design patterns.
-  - Perform security reviews early in development.
+## **4. Insecure Design**
+**Description:** Security flaws built into the design of an application.  
+**Examples:**
+- No rate limiting on login forms.
+- Missing threat modeling during development.
+**Impact:** Easy exploitation of systemic flaws.
+**Mitigation:**
+- Use secure design patterns.
+- Conduct threat modeling sessions.
+- Include security in early development phases.
 
 ---
 
-## 5️⃣ **Security Misconfiguration**
-- **Description:** Insecure default settings or incomplete configurations.
-- **Example:** Default admin/admin credentials left unchanged.
-- **Mitigation:**
-  - Disable default accounts and features.
-  - Apply hardening guides.
-  - Automate configuration management.
+## **5. Security Misconfiguration**
+**Description:** Insecure default settings or improper configurations.  
+**Examples:**
+- Default admin credentials.
+- Unnecessary services enabled.
+**Impact:** Increased attack surface.
+**Mitigation:**
+- Harden systems based on benchmarks (CIS, NIST).
+- Disable unnecessary features.
+- Regular configuration audits.
 
 ---
 
-## 6️⃣ **Vulnerable & Outdated Components**
-- **Description:** Using outdated software with known vulnerabilities.
-- **Example:** Running an old version of Apache with public exploits.
-- **Mitigation:**
-  - Regularly update dependencies.
-  - Monitor CVE databases.
-  - Use tools like `OWASP Dependency-Check`.
+## **6. Vulnerable and Outdated Components**
+**Description:** Using outdated software components with known vulnerabilities.  
+**Examples:**
+- Old CMS versions.
+- Outdated JS libraries.
+**Impact:** Exploitation of known CVEs.
+**Mitigation:**
+- Maintain an inventory of components.
+- Apply updates promptly.
+- Use vulnerability scanners.
 
 ---
 
-## 7️⃣ **Identification & Authentication Failures**
-- **Description:** Weak authentication systems that allow account compromise.
-- **Example:** No multi-factor authentication (MFA).
-- **Mitigation:**
-  - Use MFA wherever possible.
-  - Lock accounts after failed login attempts.
-  - Secure session management.
+## **7. Identification & Authentication Failures**
+**Description:** Flaws in authentication mechanisms.  
+**Examples:**
+- Weak passwords allowed.
+- No multi-factor authentication.
+**Impact:** Account takeover.
+**Mitigation:**
+- Enforce MFA.
+- Secure password reset processes.
+- Implement secure session handling.
 
 ---
 
-## 8️⃣ **Software & Data Integrity Failures**
-- **Description:** Code or data integrity not verified.
-- **Example:** Unverified software updates.
-- **Mitigation:**
-  - Use code signing.
-  - Verify digital signatures of third-party libraries.
-  - Enable integrity checks in CI/CD pipelines.
+## **8. Software & Data Integrity Failures**
+**Description:** Integrity of software updates and data is not verified.  
+**Examples:**
+- Downloading unsigned software updates.
+- Using plugins from untrusted sources.
+**Impact:** Supply chain attacks.
+**Mitigation:**
+- Use digital signatures.
+- Verify integrity before deployment.
 
 ---
 
-## 9️⃣ **Security Logging & Monitoring Failures**
-- **Description:** Lack of detection and response capabilities.
-- **Example:** No alerts for suspicious activity.
-- **Mitigation:**
-  - Implement centralized logging.
-  - Monitor logs in real-time (SIEM).
-  - Create incident response procedures.
+## **9. Security Logging & Monitoring Failures**
+**Description:** Insufficient logging and alerting of security events.  
+**Examples:**
+- No logs for failed login attempts.
+- Logs not monitored in real time.
+**Impact:** Delayed breach detection.
+**Mitigation:**
+- Enable centralized logging.
+- Set up SIEM alerts.
+- Define an incident response plan.
 
 ---
 
-## 🔟 **Server-Side Request Forgery (SSRF)**
-- **Description:** The server fetches resources from untrusted input.
-- **Example:** SSRF fetching internal AWS metadata.
-- **Mitigation:**
-  - Validate and whitelist URLs.
-  - Disable unnecessary URL schemes.
-  - Isolate server network permissions.
+## **10. Server-Side Request Forgery (SSRF)**
+**Description:** The server makes requests to unintended locations.  
+**Examples:**
+- Fetching AWS instance metadata from internal IPs.
+**Impact:** Internal network compromise.
+**Mitigation:**
+- Validate URLs and restrict protocols.
+- Block access to internal IP ranges.
+- Use allowlists.
 
 ---
 
-> **Lucifer’s Tip 🕶️**: The OWASP Top 10 is not just for reading — test these vulnerabilities in labs like [PortSwigger Web Security Academy](https://portswigger.net/web-security) and [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/).
+## 📌 OWASP Top 10 Visual Summary
+
+| Risk ID | Risk Name | Example Vulnerability | Typical Impact |
+|---------|-----------|----------------------|----------------|
+| A01     | Broken Access Control | IDOR | Unauthorized data access |
+| A02     | Cryptographic Failures | Plaintext passwords | Data theft |
+| A03     | Injection | SQL Injection | Database compromise |
+| A04     | Insecure Design | Missing rate limiting | Account brute-force |
+| A05     | Security Misconfiguration | Default creds | System takeover |
+| A06     | Vulnerable Components | Old WordPress | CVE exploitation |
+| A07     | Auth Failures | No MFA | Account takeover |
+| A08     | Integrity Failures | Unverified updates | Supply chain attack |
+| A09     | Logging Failures | No alerts | Delayed detection |
+| A10     | SSRF | Internal API access | Internal compromise |
+
+---
+
+### **Lucifer’s Tip 🕶️**: Don’t just memorize the OWASP Top 10 — actively test these in labs like [PortSwigger Web Security Academy](https://portswigger.net/web-security) or [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/) to get real skills.
