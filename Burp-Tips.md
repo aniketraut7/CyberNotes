@@ -53,3 +53,11 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
    Use Burp Intruder with a wordlist for directory brute-force
 ```
 ---
+
+## 🧠 Useful Extensions (BApp Store)Logger++ — Better request/response logging
+
+- Logger++ — Better request/response logging
+- Active Scan++ — More aggressive scanning
+- Retire.js — Detect vulnerable JavaScript libraries
+- JSON Beautifier — Pretty-print JSON responses
+
