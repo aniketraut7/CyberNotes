@@ -74,3 +74,13 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
     - Ctrl+Shift+I → Send to Intruder
 
 - Combine Burp with external tools like ffuf, dirsearch, and nmap.
+
+---
+
+## 📌 Quick Commands
+
+- Save all project data:
+  Project options → Save → Burp project file (.burp)
+
+- Change User-Agent:
+  Proxy → HTTP history → Right-click request → Change headers
