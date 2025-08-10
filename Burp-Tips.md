@@ -36,24 +36,18 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 
 ```bash
 1. **Manual Testing Workflow**
-   ```text
    Proxy → Scope → Crawl → Scan → Analyze → Exploit
    
 2. **Authentication Testing**
-   ```text
-    Capture login requests in Proxy
-    Test weak credentials with Intruder
+   Capture login requests in Proxy
+   Test weak credentials with Intruder
 
-Session Hijacking
+3. **Session Hijacking**
+   Intercept session cookies
+   Replay in new requests via Repeater
 
-    Intercept session cookies
+4. **Parameter Tampering**
+   Modify GET/POST parameters and resend
 
-    Replay in new requests via Repeater
-
-Parameter Tampering
-
-    Modify GET/POST parameters and resend
-
-Hidden Directory Discovery
-
-    Use Burp Intruder with a wordlist for directory brute-force
+5. **Hidden Directory Discovery
+   Use Burp Intruder with a wordlist for directory brute-force
