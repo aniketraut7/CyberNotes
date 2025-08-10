@@ -64,7 +64,7 @@ knockpy example.com
 ```
 
 ### **3. Hybrid / Combined Enumeration**
-1.Combines multiple methods to ensure maximum coverage.
+1. Combines multiple methods to ensure maximum coverage.
   
  - subfinder -d example.com -silent > subs.txt
  - assetfinder --subs-only example.com >> subs.txt
