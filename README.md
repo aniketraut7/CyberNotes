@@ -1,6 +1,3 @@
-# CyberNotes
-A collection of cheatsheets, notes, and quick references for cybersecurity learning.
-
 # 🧠 CyberNotes
 
 A curated collection of cheatsheets, notes, and quick references for beginners and practitioners in cybersecurity.
