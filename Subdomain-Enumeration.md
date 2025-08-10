@@ -64,11 +64,12 @@ knockpy example.com
 ```
 
 ### **3. Hybrid / Combined Enumeration**
--  Combines multiple methods to ensure maximum coverage.
+  - Combines multiple methods to ensure maximum coverage.
+  
  - subfinder -d example.com -silent > subs.txt
  - assetfinder --subs-only example.com >> subs.txt
  - amass enum -passive -d example.com >> subs.txt
  - sort -u subs.txt -o subs.txt
 
-- Validate results:
+  - Validate results:
  - cat subs.txt | httpx -silent
