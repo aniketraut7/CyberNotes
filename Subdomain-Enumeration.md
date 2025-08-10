@@ -75,3 +75,20 @@ knockpy example.com
 2. Validate results:
    
  - cat subs.txt | httpx -silent
+
+
+### 📊 Automation Script Example
+#!/bin/bash
+domain=$1
+echo "[*] Enumerating subdomains for $domain..."
+subfinder -d $domain -silent > all_subs.txt
+assetfinder --subs-only $domain >> all_subs.txt
+amass enum -passive -d $domain >> all_subs.txt
+sort -u all_subs.txt -o all_subs.txt
+cat all_subs.txt | httpx -silent > live_subs.txt
+echo "[+] Live subdomains saved to live_subs.txt"
+
+- Run it:
+ chmod +x enum.sh
+ ./enum.sh example.com
+
