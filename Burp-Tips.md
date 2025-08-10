@@ -34,14 +34,14 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 
 ## 🎯 Common Use Cases
 
+```bash
 1. **Manual Testing Workflow**
    ```text
    Proxy → Scope → Crawl → Scan → Analyze → Exploit
    
-Authentication Testing
-
+2. **Authentication Testing**
+   ```text
     Capture login requests in Proxy
-
     Test weak credentials with Intruder
 
 Session Hijacking
