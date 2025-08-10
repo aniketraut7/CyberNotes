@@ -80,7 +80,9 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 ## 📌 Quick Commands
 
 - Save all project data:
+  
   Project options → Save → Burp project file (.burp)
 
 - Change User-Agent:
+  
   Proxy → HTTP history → Right-click request → Change headers
