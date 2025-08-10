@@ -13,8 +13,9 @@ nmap 192.168.1.1
 nmap 192.168.1.1 192.168.1.2
 nmap 192.168.1.1-50
 nmap 192.168.1.0/24
+```
 
-🔍 Port Scanning
+## 🔍 Port Scanning
 nmap -F <target>               # Fast scan common 1000 ports
 nmap -p 21,22,80,443 <target>  # Specific ports
 nmap -p- <target>              # All ports
