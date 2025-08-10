@@ -63,3 +63,14 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 
 ---
 
+## ⚡ Pro Tips
+
+- Always define Target Scope to avoid scanning unnecessary hosts.
+
+- Use Hotkeys:
+
+    - Ctrl+Shift+R → Send to Repeater
+
+    - Ctrl+Shift+I → Send to Intruder
+
+- Combine Burp with external tools like ffuf, dirsearch, and nmap.
