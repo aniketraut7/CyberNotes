@@ -146,7 +146,4 @@ Comprehensive glossary for **Certified Ethical Hacker (CEH)** prep, interviews, 
 
 ---
 
-> **Lucifer’s Tip 🕶️**:  
-> Recruiters scan the **Cheat Table** for keywords.  
-> Interviewers test you on **full definitions**.  
-> This file gives you **both**.
+### **Lucifer’s Tip 🕶️**:   Master the quick definitions for speed, and dive into the full glossary for depth — because in cybersecurity, knowing the right words can open the right doors.
