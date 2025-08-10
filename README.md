@@ -30,4 +30,4 @@ Created by **Lucifer** 💻 | Curated with guidance from **Oblivex**
 - Use `Ctrl+F` / `Cmd+F` in GitHub to quickly find terms.
 - Clone the repo if you want offline access:
 ```bash
-git clone https://github.com/<your-username>/CyberNotes.git
+git clone https://github.com/aniketraut7/CyberNotes.git
