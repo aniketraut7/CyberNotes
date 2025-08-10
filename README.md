@@ -10,6 +10,7 @@ Created by **Lucifer** 💻
 
 ### 🔍 Reconnaissance & Scanning
 - [Nmap Cheatsheet](Nmap-Cheatsheet.md) — Quick reference for common scan types, flags, and examples.
+- [Subdomain Enumeration](Subdomain-Enumeration.md) — Complete guide to passive, active, and hybrid subdomain discovery with tools, scripts, and tips.
 
 ### 🧪 Tools & Usage
 - [Burp Suite Tips](Burp-Tips.md) — Handy tips, extensions, and workflow recommendations for web app testing.
