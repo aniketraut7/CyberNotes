@@ -92,4 +92,4 @@ nmap -p- --open -sS -T4 <target>  # Full TCP scan, only open ports
 nmap -Pn -A <target>          # Treat host as alive, aggressive scan
 ```
 
-Lucifer’s Tip 🕶️: Nmap is only as good as your options. Learn how to chain flags for stealth, speed, and detail.
+### Lucifer’s Tip 🕶️: Nmap is only as good as your options. Learn how to chain flags for stealth, speed, and detail.
