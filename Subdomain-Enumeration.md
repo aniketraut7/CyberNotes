@@ -78,7 +78,7 @@ knockpy example.com
 ---
 
 ### 📊 Automation Script Example
-
+  ```bash
   #!/bin/bash
 
   domain=$1
@@ -96,6 +96,7 @@ knockpy example.com
   cat all_subs.txt | httpx -silent > live_subs.txt
 
   echo "[+] Live subdomains saved to live_subs.txt"
+ ```
 
 ###  Run it:
  chmod +x enum.sh
