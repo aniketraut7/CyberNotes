@@ -54,20 +54,20 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 
 ---
 
-## 🧠 Useful Extensions (BApp Store)
+## 📌 Useful Extensions (BApp Store)
 
 - Logger++ — Enhanced logging
 - Active Scan++ — Additional scan checks
 - Retire.js — Detect vulnerable JS libraries
 - JSON Beautifier — Pretty-print JSON
-- Autorize — Test for broken access control
+- Authorize — Test for broken access control
 - Param Miner — Discover hidden parameters
 
 ---
 
 ## ⚡ Pro Tips
 
-- Always define Target Scope to avoid scanning unnecessary hosts.
+- Always define the Target Scope to avoid scanning unnecessary hosts.
 
 - Use Hotkeys:
 
@@ -79,6 +79,39 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 
 ---
 
+## 🧠 Advanced Usage
+
+### Intruder Attack Types:
+
+    - Sniper → One parameter at a time
+    - Battering Ram → Same payload in all positions
+    - Pitchfork → Multiple payload sets in parallel
+    - Cluster Bomb → All combinations
+
+### Automated Scanning:
+
+    - Burp Pro:
+        - Crawl + Audit mode
+        - Generates detailed HTML reports
+    - Filter by severity: High, Medium, Low, Info
+
+### Macro & Session Handling:
+
+    - Record login macros for authenticated scans
+    - Auto-handle session timeouts
+
+---
+
+## 📌 Example Burp Workflow for XSS Testing
+
+1. Browse the target site with Burp Proxy on
+2. Intercept input submission request
+3. Send to Repeater
+4. Inject payload:
+   - <script>alert('XSS')</script>
+5. Observe reflected script execution
+6. Validate using manual and automated scans
+
 ## 📌 Quick Commands
 
 - Save all project data:
@@ -88,3 +121,6 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 - Change User-Agent:
   
   Proxy → HTTP history → Right-click request → Change headers
+
+
+  ### Lucifer’s Tip 🕶️: Master Burp’s manual testing before depending on automation — it makes you a true hacker, not just a button clicker.
