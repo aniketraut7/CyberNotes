@@ -83,26 +83,26 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 
 ### Intruder Attack Types:
 
-    - Sniper → One parameter at a time
-    - Battering Ram → Same payload in all positions
-    - Pitchfork → Multiple payload sets in parallel
-    - Cluster Bomb → All combinations
+  - Sniper → One parameter at a time
+  - Battering Ram → Same payload in all positions
+   - Pitchfork → Multiple payload sets in parallel
+   - Cluster Bomb → All combinations
 
 ### Automated Scanning:
 
-    - Burp Pro:
-        - Crawl + Audit mode
-        - Generates detailed HTML reports
-    - Filter by severity: High, Medium, Low, Info
+   - Burp Pro:
+       - Crawl + Audit mode
+       - Generates detailed HTML reports
+   - Filter by severity: High, Medium, Low, Info
 
 ### Macro & Session Handling:
 
-    - Record login macros for authenticated scans
-    - Auto-handle session timeouts
+  - Record login macros for authenticated scans
+   - Auto-handle session timeouts
 
 ---
 
-## 📌 Example Burp Workflow for XSS Testing
+## 🛠 Example Burp Workflow for XSS Testing
 
 1. Browse the target site with Burp Proxy on
 2. Intercept input submission request
@@ -115,11 +115,9 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 ## 📌 Quick Commands
 
 - Save all project data:
-  
   Project options → Save → Burp project file (.burp)
 
 - Change User-Agent:
-  
   Proxy → HTTP history → Right-click request → Change headers
 
 
