@@ -64,6 +64,7 @@ knockpy example.com
 ```
 
 ### **3. Hybrid / Combined Enumeration**
+
 1. Combines multiple methods to ensure maximum coverage.
   
  - subfinder -d example.com -silent > subs.txt
@@ -72,4 +73,5 @@ knockpy example.com
  - sort -u subs.txt -o subs.txt
 
 2. Validate results:
+   
  - cat subs.txt | httpx -silent
