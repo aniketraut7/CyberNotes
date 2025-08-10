@@ -21,3 +21,8 @@ These methods don’t directly interact with the target’s infrastructure, maki
 - **Amass**  
   ```bash
   amass enum -passive -d example.com
+  ```
+- **Subfinder**
+  ```bash
+  subfinder -d example.com -silent
+  ```
