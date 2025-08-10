@@ -47,10 +47,10 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
    - Replay in new requests via Repeater
 
 4. Parameter Tampering
-  - Modify GET/POST parameters and resend
+   - Modify GET/POST parameters and resend
 
 5. Hidden Directory Discovery
-  - Use Burp Intruder with a wordlist for directory brute-force
+   - Use Burp Intruder with a wordlist for directory brute-force
 
 ---
 
