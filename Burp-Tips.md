@@ -54,12 +54,14 @@ This cheatsheet contains tips, tricks, and workflow ideas for beginners and prof
 
 ---
 
-## 🧠 Useful Extensions (BApp Store)Logger++ — Better request/response logging
+## 🧠 Useful Extensions (BApp Store)
 
-- Logger++ — Better request/response logging
-- Active Scan++ — More aggressive scanning
-- Retire.js — Detect vulnerable JavaScript libraries
-- JSON Beautifier — Pretty-print JSON responses
+- Logger++ — Enhanced logging
+- Active Scan++ — Additional scan checks
+- Retire.js — Detect vulnerable JS libraries
+- JSON Beautifier — Pretty-print JSON
+- Autorize — Test for broken access control
+- Param Miner — Discover hidden parameters
 
 ---
 
